@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+.error-box{
+  border:2px solid red !important
+}
+
+.success-box{
+  border:2px solid green !important
+}

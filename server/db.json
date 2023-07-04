@@ -1,0 +1,42 @@
+{
+  "contacts": [
+    {
+      "id": "HFffhkdBN",
+      "name": "John Doe",
+      "mobile": "9600753433",
+      "email": "johndoe@gmail.com",
+      "company": "Acme Incrent",
+      "title": "Marketing Manager",
+      "photo": "https://i.pinimg.com/736x/64/81/22/6481225432795d8cdf48f0f85800cf66.jpg"
+    },
+    {
+      "id": "QERghjItggh",
+      "name": "Mike Johnson",
+      "mobile": "7896543455",
+      "email": "mikejohnson@gmail.com",
+      "company": "Tech Solutions",
+      "title": "Software Engineer",
+      "photo": "https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png"
+    },
+    {
+      "name": "arun",
+      "photo": "https://cutewallpaper.org/24/avatar-icon-png/1240-x-1240-0-avatar-profile-icon-png-transparent-png-transparent-png-image-pngitem.png",
+      "email": "arun@gmail.com",
+      "mobile": "9875677899",
+      "company": "Tcs",
+      "title": "developer",
+      "photo url": "https://cutewallpaper.org/24/avatar-icon-png/1240-x-1240-0-avatar-profile-icon-png-transparent-png-transparent-png-image-pngitem.png",
+      "mobile number": "8",
+      "id": "iJrx5pY"
+    },
+    {
+      "name": "kavi",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSTblEVkkdJh15jlAbC3FpvuzCKb1o-pQQA&usqp=CAU",
+      "email": "kavi@gmail.com",
+      "mobile": "9898976456",
+      "company": "Infosys",
+      "title": "HR",
+      "id": "EZAN16u"
+    }
+  ]
+}
