@@ -1,30 +1,41 @@
 import axios from "axios";
 
 export class ContactService {
-  static serverUrl = `http://localhost:8000`;
-
+  // Retrieve all contacts
   static getAllContacts() {
-    let dataUrl = `${this.serverUrl}/contacts`;
-    return axios.get(dataUrl);
+    // Make a GET request to the '/db.json' file and retrieve the 'contacts' data
+    return axios.get("/db.json").then((response) => response.data.contacts);
   }
 
+  // Retrieve a specific contact by ID
   static getContact(contactId) {
-    let dataUrl = `${this.serverUrl}/contacts/${contactId}`;
-    return axios.get(dataUrl);
+    // Make a GET request to the '/db.json/contacts/{contactId}' endpoint and retrieve the contact data
+    return axios
+      .get(`/db.json/contacts/${contactId}`)
+      .then((response) => response.data);
   }
 
-  static createContact(contacts) {
-    let dataUrl = `${this.serverUrl}/contacts`;
-    return axios.post(dataUrl, contacts);
+  // Create a new contact
+  static createContact(contact) {
+    // Make a POST request to the '/db.json/contacts' endpoint with the new contact data
+    return axios
+      .post("/db.json/contacts", contact)
+      .then((response) => response.data);
   }
 
-  static updateContact(contacts, contactId) {
-    let dataUrl = `${this.serverUrl}/contacts/${contactId}`;
-    return axios.put(dataUrl, contacts);
+  // Update an existing contact
+  static updateContact(contact, contactId) {
+    // Make a PUT request to the '/db.json/contacts/{contactId}' endpoint with the updated contact data
+    return axios
+      .put(`/db.json/contacts/${contactId}`, contact)
+      .then((response) => response.data);
   }
 
+  // Delete a contact
   static deleteContact(contactId) {
-    let dataUrl = `${this.serverUrl}/contacts/${contactId}`;
-    return axios.delete(dataUrl);
+    // Make a DELETE request to the '/db.json/contacts/{contactId}' endpoint
+    return axios
+      .delete(`/db.json/contacts/${contactId}`)
+      .then((response) => response.data);
   }
 }
